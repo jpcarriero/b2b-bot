@@ -47,6 +47,7 @@ while True:
 		hr = int(weighted_choice(hours_weighted))
 		tmstmp = random_day.replace(hour=hr,minute=r.randint(0,59),second=r.randint(0,59))
 		print tmstmp
+		loc = weighted_choice(zips_weighted)
 		analytics.identify(uid, {
 		    'email': fname.lower()+'.'+lname.lower()+'@segment.com',
 		    'name': fname +' '+lname,
